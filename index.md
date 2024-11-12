@@ -5,7 +5,7 @@ tags: fpga vga verilog
 categories: demo
 ---
 
-Add a short welcome message or introduction here. Aim to get the viewer interested in what follows! Guideline: 1 or 2 sentences.
+Hello My name is Johanan and this is my github webpage to explain my project
 
 ## **Template VGA Design**
 ### **Project Set-Up**
