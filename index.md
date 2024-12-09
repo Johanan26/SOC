@@ -11,17 +11,28 @@ Hi my name is Johanan Seeruthen and this is my VGA driver Project, For my projec
 ### **Project Set-Up**
 The template design was a pretty straightforward demo on how to implement the VGA signal generation. It displayed vertical stripes of colors similar to an old VGA screen that produced a colourful image when no picture was being provided to them, this greatly increased my understanding of the ground work for how I was going to attempt the recreate a VGA timing and signal synchronization.
 
-I set up the project in Vivado, and I ensured all the design files were correctly integrated and ready to simulate, synthesise and implement it into my project. Vivado's enviorment gave me all the tools I needed for checking the design flow, resource usage, and timing requirements. This was important because I needed to see how the different parts of the FPGA workflow and how they connect to ensure the design could run on the Basys 3 board provided to me.
+I set up the project in Vivado, and I ensured all the design files were correctly integrated and ready to simulate, synthesise and implement it into my project. I utizlised all the toold provided to me via the software Vivado to check the design flow, resource usage, and timing requirements for the project. This was useful to see the different parts of the FPGA work flow to see how they connect to the design to see how they run on the Basys 3 Artix 7 board provided to me by Michelle Lynch. 
+
 
 Below is a screenshot of my project summary, showing the inital setup and design flow:
 
 
 
 <img src="https://raw.githubusercontent.com/Johanan26/SOC/main/docs/assets/images/Overview.png">
+
+
 ### **Template Code**
-Outline the structure and design of the Verilog code templates you were given. What do they do? Include reference to how a VGA interface works. Guideline: 2/3 short paragraphs, consider including screenshot(s).
+The main key module's in this project were:
+- **VGASync.v:** This module makes the horizontal (hsync) and vertical (vsync) sync signals, this tracks the current position of each pizels that is being displayed on the screen screen, we can then ensure that the display is being updated row by row and frame by frame by using a horizontol count(hcount) and vertical count(vcount).
+- **VGAColourStripes.v:** This module controls the colors that are being outputted based on the position of the pixels. The default design was dividing the screen into multiple vertical stripes, with each having a different color.
+For example part of the original code was assiging colors like this: `if (col >= 0 && col < 210) begin` `red_next <= 4'b0000;   // Red stripe` `green_next <= 4'b1111;` `blue_next <= 4'b0000;` `end else if (col >= 220 && col < 430) begin` `red_next <= 4'b1111;   // Green stripe` `green_next <= 4'b0000; blue_next <= 4'b1111; end`
+This logic was simplistic yet effective in splitting the screen into multiple vertical stripes with different colours. This aided me in understanding the relationship between the pixels co-ordinates and screen outputs.
 ### **Simulation**
-Explain the simulation process. Reference any important details, include a well-selected screenshot of the simulation. Guideline: 1/2 short paragraphs.
+Next step was to make a simulation, the process helped me to understand how the template design worked. I used the simulator thats included with Vivado to check the hsync and the vsync and the color signals over time. The waveform output that was produced by the simulator showed me the timing of the pulses, this made it clear to me that the design was following the VGA's specifications.
+
+<img src="https://raw.githubusercontent.com/Johanan26/SOC/main/docs/assets/images/Overview.png">
+
+
 ### **Synthesis**
 Describe the synthesis and implementation processes. Consider including 1/2 useful screenshot(s). Guideline: 1/2 short paragraphs.
 ### **Demonstration**
