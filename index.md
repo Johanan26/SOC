@@ -2,16 +2,22 @@
 layout: home
 title: FPGA VGA Driver Project
 tags: fpga vga verilog
-categories: demo
+categories: SOCProjet
 ---
 
-Hello My name is Johanan and this is my github webpage to explain my project
+Hi my name is Johanan Seeruthen and this is my VGA driver Project, For my project I started off with trying to make a bat symbol however it wouldn't work so i changed it to a smily face that blinks that was made, using a modified version of Colour Stripes provided by my teacher.
 
 ## **Template VGA Design**
 ### **Project Set-Up**
-Summarise the project set-up and design flow. Include a screenshot of your own set-up, for example see the image of my Project Summary window below. Guideline 1 short paragraph.
+The template design was a pretty straightforward demo on how to implement the VGA signal generation. It displayed vertical stripes of colors similar to an old VGA screen that produced a colourful image when no picture was being provided to them, this greatly increased my understanding of the ground work for how I was going to attempt the recreate a VGA timing and signal synchronization.
 
-<img src="https://raw.githubusercontent.com/melgineer/fpga-vga-verilog/main/docs/assets/images/VGAPrjSum.png">
+I set up the project in Vivado, and I ensured all the design files were correctly integrated and ready to simulate, synthesise and implement it into my project. Vivado's enviorment gave me all the tools I needed for checking the design flow, resource usage, and timing requirements. This was important because I needed to see how the different parts of the FPGA workflow and how they connect to ensure the design could run on the Basys 3 board provided to me.
+
+Below is a screenshot of my project summary, showing the inital setup and design flow:
+
+
+
+<img src="https://raw.githubusercontent.com/Johanan26/SOC/main/docs/assets/images/Overview.png">
 ### **Template Code**
 Outline the structure and design of the Verilog code templates you were given. What do they do? Include reference to how a VGA interface works. Guideline: 2/3 short paragraphs, consider including screenshot(s).
 ### **Simulation**
