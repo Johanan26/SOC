@@ -50,13 +50,16 @@ Finally, once the board was programmed and connected to the VGA port on the moni
 ### **Code Adaptation**
 After doing the template display, I decided to try it myself, I made a smiley face that blinks. This involved adjusting the code within `VGAColourCycle.v` module.
 
-insert a photo of your own code displayed temp one for now
-<img src="https://raw.githubusercontent.com/Johanan26/SOC/main/docs/assets/images/TempDisplay.png">
+<img src="https://raw.githubusercontent.com/Johanan26/SOC/main/docs/assets/images/ActualDisplay.png">
 
-This image isn't as complex as it seems to display but it does take an understanding of how to cycle the images to make the face wink and how to allign the images to make sure it also fits on the display. This design can be created by experimenting with the 
+This image isn't as complex as it seems to display but it does take an understanding of how to cycle the images to make the face wink and how to allign the images to make sure it also fits on the display. This design can be created by experimenting with the code until you understand and see the desired result you were hoping for
 ### **Simulation**
-Show how you simulated your own design. Are there any things to note? Demonstrate your understanding. Add a screenshot. Guideline: 1-2 short paragraphs.
-### **Synthesis**
+I then simulated the design on my blinking face design to confirm my color assignments and my transitions between the sections were correct. The waveform that was shown by the simulation also showed that the hcount values were alligned with what I put in my code to allign the boundaries of each pixel on the blinking face, the colors also matched what I expected to show up (white, yellow and black).
+
+<img src="https://raw.githubusercontent.com/Johanan26/SOC/main/docs/assets/images/Demo Sim.png">
+
+The simulation also helps me if I needed to debug an issue in which the colors were overlapping because of incorrect boundary values. After adjusting the values within the if statements, the simulation looked perfect.
+### **Synthesis & Implementation**
 Describe the synthesis & implementation outputs for your design, are there any differences to that of the original design? Guideline 1-2 short paragraphs.
 ### **Demonstration**
 If you get your own design working on the Basys3 board, take a picture! Guideline: 1-2 sentences.
