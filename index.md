@@ -43,12 +43,17 @@ The next step after synthesis was the implementation and it programmed the desig
 
 ### **Demonstration**
 Finally, once the board was programmed and connected to the VGA port on the monitor, The screen displayed the coloured vertical stripes. It was amazing to see some image finally displaying to the monitor
+<img src="https://raw.githubusercontent.com/Johanan26/SOC/main/docs/assets/images/TempDisplay.png">
 
 
 ## **My VGA Design Edit**
-Introduce your own design idea. Consider how complex/achievabble this might be or otherwise. Reference any research you do online (use hyperlinks).
 ### **Code Adaptation**
-Briefly show how you changed the template code to display a different image. Demonstrate your understanding. Guideline: 1-2 short paragraphs.
+After doing the template display, I decided to try it myself, I made a smiley face that blinks. This involved adjusting the code within `VGAColourCycle.v` module.
+
+insert a photo of your own code displayed temp one for now
+<img src="https://raw.githubusercontent.com/Johanan26/SOC/main/docs/assets/images/TempDisplay.png">
+
+This image isn't as complex as it seems to display but it does take an understanding of how to cycle the images to make the face wink and how to allign the images to make sure it also fits on the display. This design can be created by experimenting with the 
 ### **Simulation**
 Show how you simulated your own design. Are there any things to note? Demonstrate your understanding. Add a screenshot. Guideline: 1-2 short paragraphs.
 ### **Synthesis**
