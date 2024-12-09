@@ -30,13 +30,20 @@ This logic was simplistic yet effective in splitting the screen into multiple ve
 ### **Simulation**
 Next step was to make a simulation, the process helped me to understand how the template design worked. I used the simulator thats included with Vivado to check the hsync and the vsync and the color signals over time. The waveform output that was produced by the simulator showed me the timing of the pulses, this made it clear to me that the design was following the VGA's specifications.
 
-<img src="https://raw.githubusercontent.com/Johanan26/SOC/main/docs/assets/images/Overview.png">
+<img src="https://raw.githubusercontent.com/Johanan26/SOC/main/docs/assets/images/Demo Sim.png">
 
-
+For this template the simulation it had to verify that the color regions were mapped correctly to the sections of the screen. The timing diagram shown above shows how it transitions between the multiple color zones, this confirmed that the counters were incrementing as they were told to do.
 ### **Synthesis**
-Describe the synthesis and implementation processes. Consider including 1/2 useful screenshot(s). Guideline: 1/2 short paragraphs.
+Next step was synthesis, for this process we had an initial design template that we tranlated the code into the a netlist which could then be used on the FPGA hardware. I used the synthesis tool on Vivado to do this process, this gave me a detailed and informative insights into how this design used it's recources, logic mapping and the timing. These reports confiremed that the template design we were using had been utilized with minimal logic and memory which was within the capabilities of the Basys 3 Artix 7 development board. This means that it indicated the basic design that my teacher had provided was a straightforward combinational logic sequence with counters and were efficient and ready for the FPGA programming.
+
+add photo of report (temp one for now)
+<img src="https://raw.githubusercontent.com/Johanan26/SOC/main/docs/assets/images/Demo Sim.png">
+
+The next step after synthesis was the implementation and it programmed the designing onto the FPGA hardware successfully. This involved mapping the bitstream that was generated to the board provided by Michelle Lynch, from this we can then connect the board to the VGA port on our monitor in our labs. When this is completed we should see the color stripes start displaying on the monitor. This shows that the design is functioning correctly as it displays on the monitor, we can also see that the image is displaying smnoothly showinf the VGA timing signals are synced. The process shows the effectiveness and how modular the design is, it also shows its ready for real world applications.
+
 ### **Demonstration**
-Perhaps add a picture of your demo. Guideline: 1/2 sentences.
+Finally, once the board was programmed and connected to the VGA port on the monitor, The screen displayed the coloured vertical stripes. It was amazing to see some image finally displaying to the monitor
+
 
 ## **My VGA Design Edit**
 Introduce your own design idea. Consider how complex/achievabble this might be or otherwise. Reference any research you do online (use hyperlinks).
