@@ -50,6 +50,7 @@ Finally, once the board was programmed and connected to the VGA port on the moni
 ### **Code Adaptation**
 After doing the template display, I decided to try it myself, I made a smiley face that blinks. This involved adjusting the code within `VGAColourCycle.v` module.
 
+<img src="https://raw.githubusercontent.com/Johanan26/SOC/main/docs/assets/images/face blinking.jpg">
 <img src="https://raw.githubusercontent.com/Johanan26/SOC/main/docs/assets/images/ActualDisplay.png">
 
 This image isn't as complex as it seems to display but it does take an understanding of how to cycle the images to make the face wink and how to allign the images to make sure it also fits on the display. This design can be created by experimenting with the code until you understand and see the desired result you were hoping for
