@@ -30,7 +30,7 @@ This logic was simplistic yet effective in splitting the screen into multiple ve
 ### **Simulation**
 Next step was to make a simulation, the process helped me to understand how the template design worked. I used the simulator thats included with Vivado to check the hsync and the vsync and the color signals over time. The waveform output that was produced by the simulator showed me the timing of the pulses, this made it clear to me that the design was following the VGA's specifications.
 
-<img src="https://raw.githubusercontent.com/Johanan26/SOC/main/docs/assets/images/Working Demo Sim.png">
+<img src="https://raw.githubusercontent.com/Johanan26/SOC/main/docs/assets/images/init sim.png">
 
 For this template the simulation it had to verify that the color regions were mapped correctly to the sections of the screen. The timing diagram shown above shows how it transitions between the multiple color zones, this confirmed that the counters were incrementing as they were told to do.
 ### **Synthesis**
@@ -60,16 +60,20 @@ I then simulated the design on my blinking face design to confirm my color assig
 <img src="https://raw.githubusercontent.com/Johanan26/SOC/main/docs/assets/images/Working Demo Sim.png">
 
 The simulation also helps me if I needed to debug an issue in which the colors were overlapping because of incorrect boundary values. After adjusting the values within the if statements, the simulation looked perfect.
-### **Synthesis & Implementation**
-Describe the synthesis & implementation outputs for your design, are there any differences to that of the original design? Guideline 1-2 short paragraphs.
+### **Synthesis**
+next step was the synthesis, this process converted my Verilog code into a neetlist, this made it more usable for the FPGA hardware. I used the tools that are included with Vivado to generate a synthesis report, this told me there were no significant increses in the resource usage against my initial template shown above, I think this is becauase they both had very similar codes and relied on on the simple combinational logic for the assigning of the colors and counters for the pixel tracking. The key metrics like logic cell usage and the timing of it were shown to be within the limits for the board. This told me the design could be implemented in a real world application on the board.
+
+<img src="https://raw.githubusercontent.com/Johanan26/SOC/main/docs/assets/images/synthesis report.png">
+
+Also included in this is the useful and helpful insights the synthesis gave me into what optimizations could be added like some logic to reduce delays and also improve the timing performance. Vivado also gave me some pointers on areas to improve on and refine on, it told me I can maybe add some timing constraints for the pixel clock. This mad sure my hardware was compatiable, it also taught me why I should keep using the value synthesis as this could play a critical step when i'm trying to improve my designs before I implement them into real world applications. 
 ### **Demonstration**
-If you get your own design working on the Basys3 board, take a picture! Guideline: 1-2 sentences.
+After I finished all these steps I can finally implment the design onto my board to use the VGA driver to display it onto a monitor. What I saw on the monitor was the smiley face blinking at me as it transitoned between the two switch cases. This was a great success as it shows all my code worked and the simluation proved to be right.
 <img src="https://raw.githubusercontent.com/Johanan26/SOC/main/docs/assets/images/face blinking.jpg">
 <img src="https://raw.githubusercontent.com/Johanan26/SOC/main/docs/assets/images/ActualDisplay.png">
 
 ## **Heirarchy Layout**
-The following image shows use how the heirarchy of the code should be displayed
-<img src="https://raw.githubusercontent.com/melgineer/fpga-vga-verilog/main/docs/assets/images/Source.png">
+The hierarchy layout in the images shows me how the code is structred, it starts with the main components at the top and their related parts below it. This helps me keep the code clear to understand and east to work with by showing how everything is connected together. This structer make it easier for me to understand, fix and possibly even expand in the future.
+<img src="https://raw.githubusercontent.com/Johanan26/SOC/main/docs/assets/images/Source.png">
 
 ## **Failed Tests**
 This is a paragraph. Add an empty line to start a new paragraph.
