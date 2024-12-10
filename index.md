@@ -37,7 +37,7 @@ For this template the simulation it had to verify that the color regions were ma
 Next step was synthesis, for this process we had an initial design template that we tranlated the code into the a netlist which could then be used on the FPGA hardware. I used the synthesis tool on Vivado to do this process, this gave me a detailed and informative insights into how this design used it's recources, logic mapping and the timing. These reports confiremed that the template design we were using had been utilized with minimal logic and memory which was within the capabilities of the Basys 3 Artix 7 development board. This means that it indicated the basic design that my teacher had provided was a straightforward combinational logic sequence with counters and were efficient and ready for the FPGA programming.
 
 add photo of report (temp one for now)
-<img src="https://raw.githubusercontent.com/Johanan26/SOC/main/docs/assets/images/synthesis report.png">
+<img src="https://raw.githubusercontent.com/Johanan26/SOC/main/docs/assets/images/init report.png">
 
 The next step after synthesis was the implementation and it programmed the designing onto the FPGA hardware successfully. This involved mapping the bitstream that was generated to the board provided by Michelle Lynch, from this we can then connect the board to the VGA port on our monitor in our labs. When this is completed we should see the color stripes start displaying on the monitor. This shows that the design is functioning correctly as it displays on the monitor, we can also see that the image is displaying smnoothly showinf the VGA timing signals are synced. The process shows the effectiveness and how modular the design is, it also shows its ready for real world applications.
 
