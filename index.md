@@ -16,8 +16,6 @@ I set up the project in Vivado, and I ensured all the design files were correctl
 
 Below is a screenshot of my project summary, showing the inital setup and design flow:
 
-
-
 <img src="https://raw.githubusercontent.com/Johanan26/SOC/main/docs/assets/images/Overview.png">
 
 
@@ -36,19 +34,19 @@ For this template the simulation it had to verify that the color regions were ma
 ### **Synthesis**
 Next step was synthesis, for this process we had an initial design template that we tranlated the code into the a netlist which could then be used on the FPGA hardware. I used the synthesis tool on Vivado to do this process, this gave me a detailed and informative insights into how this design used it's recources, logic mapping and the timing. These reports confiremed that the template design we were using had been utilized with minimal logic and memory which was within the capabilities of the Basys 3 Artix 7 development board. This means that it indicated the basic design that my teacher had provided was a straightforward combinational logic sequence with counters and were efficient and ready for the FPGA programming.
 
-add photo of report (temp one for now)
 <img src="https://raw.githubusercontent.com/Johanan26/SOC/main/docs/assets/images/init report.png">
 
 The next step after synthesis was the implementation and it programmed the designing onto the FPGA hardware successfully. This involved mapping the bitstream that was generated to the board provided by Michelle Lynch, from this we can then connect the board to the VGA port on our monitor in our labs. When this is completed we should see the color stripes start displaying on the monitor. This shows that the design is functioning correctly as it displays on the monitor, we can also see that the image is displaying smnoothly showinf the VGA timing signals are synced. The process shows the effectiveness and how modular the design is, it also shows its ready for real world applications.
 
 ### **Demonstration**
 Finally, once the board was programmed and connected to the VGA port on the monitor, The screen displayed the coloured vertical stripes. It was amazing to see some image finally displaying to the monitor
+
 <img src="https://raw.githubusercontent.com/Johanan26/SOC/main/docs/assets/images/TempDisplay.png">
 
 
 ## **My VGA Design Edit**
 ### **Code Adaptation**
-After doing the template display, I decided to try it myself, I made a smiley face that blinks. This involved adjusting the code within `VGAColourCycle.v` module.
+The verilog code bellow is what i adapted to alter the demo template to generates my own personal code. It generates a simple face with blinking eyes on the VGA display. The logic for blinking is controller with a counter we made prior, this toggles the blink signal used for the face every so often based on the defined `BLINK_PERIOD`. The face was darwn by assigning color values to areas on the screen using the display grid. The face itself is yellow with black eyes and the eyes visibility are toggled based on the `blink` signal. The nose is also a small black rectangle within the face area. This code is made to make a visual representation of a face that is blinking.
 
 <img src="https://raw.githubusercontent.com/Johanan26/SOC/main/docs/assets/images/What I changed in VGATOP.png">
 <img src="https://raw.githubusercontent.com/Johanan26/SOC/main/docs/assets/images/FaceCode.png">
@@ -76,7 +74,7 @@ The hierarchy layout in the images shows me how the code is structred, it starts
 <img src="https://raw.githubusercontent.com/Johanan26/SOC/main/docs/assets/images/Source.png">
 
 ## **Failed Tests**
-This is a paragraph. Add an empty line to start a new paragraph.
+There was a lot of trial and error during the duration of this project the following images outline the errors in the code as the images were not displaying a bat symbol. The original image i was supposed to make was the batman symbol however under intense trials and error it wouldn't work and time was against me so i decided to create a smiley face hat blinks instead.
 <img src="https://raw.githubusercontent.com/Johanan26/SOC/main/docs/assets/images/error 1.jpg">
 <img src="https://raw.githubusercontent.com/Johanan26/SOC/main/docs/assets/images/error2.jpg">
 <img src="https://raw.githubusercontent.com/Johanan26/SOC/main/docs/assets/images/error3.jpg">
