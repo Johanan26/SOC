@@ -67,6 +67,11 @@ If you get your own design working on the Basys3 board, take a picture! Guidelin
 <img src="https://raw.githubusercontent.com/Johanan26/SOC/main/docs/assets/images/face blinking.jpg">
 <img src="https://raw.githubusercontent.com/Johanan26/SOC/main/docs/assets/images/ActualDisplay.png">
 ## **Failed Tests**
+<img src="https://raw.githubusercontent.com/Johanan26/SOC/main/docs/assets/images/error 1.jpg">
+<img src="https://raw.githubusercontent.com/Johanan26/SOC/main/docs/assets/images/error2.jpg">
+<img src="https://raw.githubusercontent.com/Johanan26/SOC/main/docs/assets/images/error3.jpg">
+<img src="https://raw.githubusercontent.com/Johanan26/SOC/main/docs/assets/images/error4.jpg">
+<img src="https://raw.githubusercontent.com/Johanan26/SOC/main/docs/assets/images/error5.jpg">
 This is a paragraph. Add an empty line to start a new paragraph.
 
 Font can be emphasised as *Italic* or **Bold**.
