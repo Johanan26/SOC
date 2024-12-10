@@ -49,9 +49,8 @@ Finally, once the board was programmed and connected to the VGA port on the moni
 ## **My VGA Design Edit**
 ### **Code Adaptation**
 After doing the template display, I decided to try it myself, I made a smiley face that blinks. This involved adjusting the code within `VGAColourCycle.v` module.
-
-<img src="https://raw.githubusercontent.com/Johanan26/SOC/main/docs/assets/images/face blinking.jpg">
-<img src="https://raw.githubusercontent.com/Johanan26/SOC/main/docs/assets/images/ActualDisplay.png">
+<img src="https://raw.githubusercontent.com/Johanan26/SOC/main/docs/assets/images/What I changed in VGATOP.png">
+<img src="https://raw.githubusercontent.com/Johanan26/SOC/main/docs/assets/images/FaceCode.png">
 
 This image isn't as complex as it seems to display but it does take an understanding of how to cycle the images to make the face wink and how to allign the images to make sure it also fits on the display. This design can be created by experimenting with the code until you understand and see the desired result you were hoping for
 ### **Simulation**
@@ -64,7 +63,8 @@ The simulation also helps me if I needed to debug an issue in which the colors w
 Describe the synthesis & implementation outputs for your design, are there any differences to that of the original design? Guideline 1-2 short paragraphs.
 ### **Demonstration**
 If you get your own design working on the Basys3 board, take a picture! Guideline: 1-2 sentences.
-
+<img src="https://raw.githubusercontent.com/Johanan26/SOC/main/docs/assets/images/face blinking.jpg">
+<img src="https://raw.githubusercontent.com/Johanan26/SOC/main/docs/assets/images/ActualDisplay.png">
 ## **Failed Tests**
 This is a paragraph. Add an empty line to start a new paragraph.
 
