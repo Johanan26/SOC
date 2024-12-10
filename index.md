@@ -49,6 +49,7 @@ Finally, once the board was programmed and connected to the VGA port on the moni
 ## **My VGA Design Edit**
 ### **Code Adaptation**
 After doing the template display, I decided to try it myself, I made a smiley face that blinks. This involved adjusting the code within `VGAColourCycle.v` module.
+
 <img src="https://raw.githubusercontent.com/Johanan26/SOC/main/docs/assets/images/What I changed in VGATOP.png">
 <img src="https://raw.githubusercontent.com/Johanan26/SOC/main/docs/assets/images/FaceCode.png">
 
