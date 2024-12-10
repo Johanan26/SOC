@@ -57,7 +57,7 @@ This image isn't as complex as it seems to display but it does take an understan
 ### **Simulation**
 I then simulated the design on my blinking face design to confirm my color assignments and my transitions between the sections were correct. The waveform that was shown by the simulation also showed that the hcount values were alligned with what I put in my code to allign the boundaries of each pixel on the blinking face, the colors also matched what I expected to show up (white, yellow and black).
 
-<img src="https://raw.githubusercontent.com/Johanan26/SOC/main/docs/assets/images/Demo Sim.png">
+<img src="https://raw.githubusercontent.com/Johanan26/SOC/main/docs/assets/images/Working Demo Sim.png">
 
 The simulation also helps me if I needed to debug an issue in which the colors were overlapping because of incorrect boundary values. After adjusting the values within the if statements, the simulation looked perfect.
 ### **Synthesis & Implementation**
