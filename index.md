@@ -5,7 +5,7 @@ tags: fpga vga verilog
 categories: SOCProjet
 ---
 
-Hi my name is Johanan Seeruthen and this is my VGA driver Project, For my project I started off with trying to make a bat symbol however it wouldn't work so i changed it to a smily face that blinks that was made, using a modified version of Colour Stripes provided by my teacher.
+Hi my name is Johanan Seeruthen and this is my VGA driver Project report. For my project I started off with trying to make a bat symbol however it wouldn't work so i changed it to a smily face that blinks that was made, using a modified version of Colour Stripes provided by my teacher.
 
 ## **Template VGA Design**
 ### **Project Set-Up**
